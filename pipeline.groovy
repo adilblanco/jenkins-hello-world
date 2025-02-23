@@ -23,6 +23,7 @@ pipeline {
                 sh '''
             export PATH=$HOME/.local/bin:$PATH
             pipenv run pytest
+            pipenv run pytest --cov
         '''
             }
         }
